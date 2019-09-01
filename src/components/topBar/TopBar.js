@@ -266,17 +266,21 @@ class TopBar extends Component {
                   <div className="u-img"><img src="../assets/images/users/1.jpg" alt="user" /></div>
                   <div className="u-text">
                     <h4>Steave Jobs</h4>
-                    <p className="text-muted">varun@gmail.com</p><a href="pages-profile.html" className="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                    <p className="text-muted">varun@gmail.com</p><Link to="/profil" class="btn btn-rounded btn-danger btn-sm">View Profile</Link>
                 </div>
-              </li>
+                </div>
+                                    </li>
+  
               <li role="separator" className="divider" />
-              <li><a href="#"><i className="ti-user" /> My Profile</a></li>
+          
+
+              <li><Link to="/profil"><i className="ti-user" /> Mon Profil</Link></li>
               <li><a href="#"><i className="ti-wallet" /> My Balance</a></li>
-              <li><a href="#"><i className="ti-email" /> Inbox</a></li>
+              <li><Link to="/boiteReception"><i className="ti-email" /> Boite De Reception</Link></li>
               <li role="separator" className="divider" />
-              <li><a href="#"><i className="ti-settings" /> Account Setting</a></li>
+              <li><Link to="/parametre"><i className="ti-settings" /> paramétre du copmte</Link></li>
               <li role="separator" className="divider" />
-              <li><a href="#"><i className="fa fa-power-off" /> Logout</a></li>
+              <li><a href="#"><i className="fa fa-power-off" /> déconnection</a></li>
             </ul>
           </div>
         </li>

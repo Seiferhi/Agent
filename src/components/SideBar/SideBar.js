@@ -13,14 +13,14 @@ class SideBar extends Component {
                 <li className="nav-small-cap">--- ANNONCES</li>
                 <li>
                   {" "}
-                  <a
+                  <Link
                     className=" waves-effect waves-dark"
-                    href="#"
+                    to="/annonces"
                     aria-expanded="false"
                   >
                     <i className="icon-Car-Wheel" />
                     <span className="hide-menu">Gérer les annonces </span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-small-cap">--- DEMANDES</li>
@@ -36,7 +36,7 @@ class SideBar extends Component {
                   </a>
                   <ul aria-expanded="false" className="collapse">
                     <li>
-                      <a href="layout-single-column.html">Ventes</a>
+                      <Link to ="/demandeDeVente">Ventes</Link>
                     </li>
                     <li>
                       <a href="layout-fix-header.html">Achats</a>
@@ -62,48 +62,40 @@ class SideBar extends Component {
                   </a>
                   <ul aria-expanded="false" className="collapse">
                     <li>
-                      <a href="starter-kit.html">Starter Kit</a>
+                      <a href="starter-kit.html">Etude Projet</a>
                     </li>
                     <li>
-                      <a href="pages-blank.html">Blank page</a>
+                      <a href="pages-blank.html">Conseils</a>
                     </li>
-                    <li>
-                      <a href="#" className="has-arrow">
-                        Authentication{" "}
-                        <span className="label label-rounded label-success pull-right">
-                          6
-                        </span>
-                      </a>
-                      <ul aria-expanded="false" className="collapse">
-                        <li>
-                          <a href="pages-login.html">Login 1</a>
-                        </li>
-                        <li>
-                          <a href="pages-login-2.html">Login 2</a>
-                        </li>
-
-                        <li>
-                          <a href="pages-recover-password.html">
-                            Recover password
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
+                    
 
                     <li>
-                      <a href="#" className="has-arrow">
-                        Error Pages
+                      <a href="#">
+                      Estimation du prix
                       </a>
-                      <ul aria-expanded="false" className="collapse">
-                        <li>
-                          <a href="pages-error-400.html">400</a>
-                        </li>
-                        <li>
-                          <a href="pages-error-403.html">403</a>
-                        </li>
-                      </ul>
                     </li>
+                    <li>
+                      <a href="#">
+                      Négociation
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                     Demande une visite
+                      </a>
+                    </li>
+                   
                   </ul>
+                </li>
+                <li>
+                  <Link
+                    className=" waves-effect waves-dark"
+                    to=""
+                    aria-expanded="false"
+                  >
+                    <i className="icon-Car-Wheel" />
+                    <span className="hide-menu">Reporting </span>
+                  </Link>
                 </li>
               </ul>
             </nav>
