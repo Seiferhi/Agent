@@ -36,7 +36,7 @@ class SideBar extends Component {
                   </a>
                   <ul aria-expanded="false" className="collapse">
                     <li>
-                      <Link to ="/demandeDeVente">Ventes</Link>
+                      <Link to="/demandeVente">Ventes</Link>
                     </li>
                     <li>
                       <a href="layout-fix-header.html">Achats</a>
@@ -65,26 +65,18 @@ class SideBar extends Component {
                       <a href="starter-kit.html">Etude Projet</a>
                     </li>
                     <li>
-                      <a href="pages-blank.html">Conseils</a>
+                      <a href="/conseils">Conseils</a>
                     </li>
-                    
 
                     <li>
-                      <a href="#">
-                      Estimation du prix
-                      </a>
+                      <a href="#">Estimation du prix</a>
                     </li>
                     <li>
-                      <a href="#">
-                      Négociation
-                      </a>
+                      <a href="#">Négociation</a>
                     </li>
                     <li>
-                      <a href="#">
-                     Demande une visite
-                      </a>
+                      <a href="#">Demande une visite</a>
                     </li>
-                   
                   </ul>
                 </li>
                 <li>

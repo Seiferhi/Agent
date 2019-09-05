@@ -9,6 +9,7 @@ import BoiteRec from "./components/agent/boiteDeReception/boiteDeReception";
 import DetaillesMgs from "./components/agent/boiteDeReception/detailleMsg";
 import DemandeVente from "./components/agent/vente/Vente";
 import DemandeLocation from "./components/agent/location/location";
+import Conseils from "./components/Annonces/service/conseils/conseils";
 class App extends Component {
   render() {
     return (
@@ -22,6 +23,7 @@ class App extends Component {
         <Route exact path="/detaillesMessage" component={DetaillesMgs} />
         <Route exact path="/demandeVente" component={DemandeVente} />
         <Route exact path="/demandeLocation" component={DemandeLocation} />
+        <Route exact path="/conseils" component={Conseils} />
 
         <SideBar />
       </BrowserRouter>

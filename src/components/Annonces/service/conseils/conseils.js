@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
-import DatatablePage from "./tableVente";
+import PositioningActionsColumn from "./conseilsTables";
 
-class DemandeVente extends Component {
+class Conseils extends Component {
   render() {
     return (
       <div className="Annonces">
@@ -33,7 +33,7 @@ class DemandeVente extends Component {
                 <div className="card">
                   <div className="card-body">
                     <div className="table-responsive m-t-40">
-                      <DatatablePage />
+                      <PositioningActionsColumn />
                     </div>
                   </div>
                 </div>
@@ -46,4 +46,4 @@ class DemandeVente extends Component {
     );
   }
 }
-export default DemandeVente;
+export default Conseils;
