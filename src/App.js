@@ -9,7 +9,7 @@ import BoiteRec from "./components/boiteDeReception/boiteDeReception";
 import DetaillesMgs from "./components/boiteDeReception/detailleMsg";
 import DemandeVente from "./components/vente/Vente";
 import DemandeLocation from "./components/location/location";
-import Conseils from "./components/Annonces/service/conseils/conseils";
+import Conseils from "./components/service/conseils/conseils";
 class App extends Component {
   render() {
     return (
