@@ -62,7 +62,7 @@ class SideBar extends Component {
                   </a>
                   <ul aria-expanded="false" className="collapse">
                     <li>
-                      <a href="starter-kit.html">Etude Projet</a>
+                      <a href="./etudeProjets">Etude Projet</a>
                     </li>
                     <li>
                       <a href="/conseils">Conseils</a>
@@ -76,6 +76,9 @@ class SideBar extends Component {
                     </li>
                     <li>
                       <a href="#">Demande une visite</a>
+                    </li>
+                    <li>
+                      <a href="/autres">Autres</a>
                     </li>
                   </ul>
                 </li>

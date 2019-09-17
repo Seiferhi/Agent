@@ -3,7 +3,7 @@ import { MDBDataTable } from "mdbreact";
 import PropTypes from "prop-types";
 import axios from "axios";
 
-class PositioningActionsColumn extends Component {
+class ClientTable extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,9 +13,9 @@ class PositioningActionsColumn extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:8080/conseils/all")
+      .get("http://localhost:8080/clients/all")
       .then(res => {
-        this.setState({ conseils: res.data });
+        this.setState({ clients: res.data });
       })
       .catch(err => console.log(err));
   }
@@ -26,6 +26,12 @@ class PositioningActionsColumn extends Component {
         {
           label: "Nom",
           field: "nom",
+          sort: "asc",
+          width: 150
+        },
+        {
+          label: "Prenonom",
+          field: "prenom",
           sort: "asc",
           width: 150
         },
@@ -41,24 +47,18 @@ class PositioningActionsColumn extends Component {
           field: "telephone",
           sort: "asc",
           width: 100
-        },
-        {
-          label: "Message",
-          field: "message",
-          sort: "asc",
-          width: 100
         }
       ],
       rows: []
     };
 
     {
-      this.state.conseils.map(conseil =>
+      this.state.clients.map(client =>
         data.rows.push({
-          Nom: conseil.nom,
-          "Email ": conseil.email,
-          Telephone: conseil.tel,
-          Message: conseil.message
+          Nom: client.nom,
+          Prenom: client.prenom,
+          "Email ": client.email,
+          Telephone: client.tel
         })
       );
     }
@@ -67,4 +67,4 @@ class PositioningActionsColumn extends Component {
   }
 }
 
-export default PositioningActionsColumn;
+export default ClientTable;
